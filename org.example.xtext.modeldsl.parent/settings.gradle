@@ -1,0 +1,2 @@
+include 'org.example.xtext.modeldsl'
+include 'org.example.xtext.modeldsl.tests'
