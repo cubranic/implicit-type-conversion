@@ -83,7 +83,7 @@ public class ModelDslParsingTest {
       _builder.append("op getPoliteAge() : Double {");
       _builder.newLine();
       _builder.append("            ");
-      _builder.append("age.doubleValue - 5");
+      _builder.append("age - 5");
       _builder.newLine();
       _builder.append("        ");
       _builder.append("}");
