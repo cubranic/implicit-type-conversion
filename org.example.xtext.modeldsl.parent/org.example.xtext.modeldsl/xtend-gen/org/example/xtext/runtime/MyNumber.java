@@ -8,7 +8,7 @@ public class MyNumber {
     this.value = value;
   }
   
-  public Double doubleValue() {
-    return this.value;
+  public double doubleValue() {
+    return this.value.doubleValue();
   }
 }

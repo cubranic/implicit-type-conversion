@@ -7,7 +7,7 @@ class MyNumber {
         this.value = value
     }
     
-    def doubleValue() {
-        return value
+    def double doubleValue() {
+        return value.doubleValue
     }
 }
