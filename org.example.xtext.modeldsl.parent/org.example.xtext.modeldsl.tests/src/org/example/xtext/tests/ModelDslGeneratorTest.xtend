@@ -37,7 +37,7 @@ class ModelDslGeneratorTest {
                     }
                     
                     op getPoliteAge() : Double {
-                        age.doubleValue - 5
+                        age - 5
                     }
                 }
                 

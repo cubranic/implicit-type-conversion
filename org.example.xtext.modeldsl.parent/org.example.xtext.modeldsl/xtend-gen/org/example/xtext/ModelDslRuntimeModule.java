@@ -3,11 +3,22 @@
  */
 package org.example.xtext;
 
+import org.eclipse.xtext.xbase.compiler.XbaseCompiler;
+import org.eclipse.xtext.xbase.typesystem.computation.SynonymTypesProvider;
 import org.example.xtext.AbstractModelDslRuntimeModule;
+import org.example.xtext.types.ModelDslSynonymTypesProvider;
+import org.example.xtext.types.ModelDslXbaseCompiler;
 
 /**
  * Use this class to register components to be used at runtime / without the Equinox extension registry.
  */
 @SuppressWarnings("all")
 public class ModelDslRuntimeModule extends AbstractModelDslRuntimeModule {
+  public Class<? extends SynonymTypesProvider> bindSynonymTypesProvider() {
+    return ModelDslSynonymTypesProvider.class;
+  }
+  
+  public Class<? extends XbaseCompiler> bindXbaseCompiler() {
+    return ModelDslXbaseCompiler.class;
+  }
 }
