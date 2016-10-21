@@ -164,8 +164,7 @@ class ModelDslGeneratorTest {
           }
           
           public Double getPoliteAge() {
-            Double _doubleValue = this.age.doubleValue();
-            return Double.valueOf(((_doubleValue).doubleValue() - 5));
+            return Double.valueOf(((this.age).doubleValue() - 5));
           }
         }
         

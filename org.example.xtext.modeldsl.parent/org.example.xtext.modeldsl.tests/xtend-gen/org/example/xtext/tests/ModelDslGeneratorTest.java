@@ -401,10 +401,7 @@ public class ModelDslGeneratorTest {
       _builder_1.append("public Double getPoliteAge() {");
       _builder_1.newLine();
       _builder_1.append("    ");
-      _builder_1.append("Double _doubleValue = this.age.doubleValue();");
-      _builder_1.newLine();
-      _builder_1.append("    ");
-      _builder_1.append("return Double.valueOf(((_doubleValue).doubleValue() - 5));");
+      _builder_1.append("return Double.valueOf(((this.age).doubleValue() - 5));");
       _builder_1.newLine();
       _builder_1.append("  ");
       _builder_1.append("}");
